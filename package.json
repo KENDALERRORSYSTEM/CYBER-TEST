@@ -1,0 +1,43 @@
+{
+  "name": "x7-cyber-academy",
+  "version": "1.0.0",
+  "description": "Premium Cybersecurity Education Platform - Ethical Hacking Sandbox",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.{ts,tsx,json,css}\""
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^10.16.0",
+    "three": "^r128",
+    "tailwindcss": "^3.3.0",
+    "clsx": "^2.0.0",
+    "zustand": "^4.4.0",
+    "idb": "^7.1.0",
+    "next-pwa": "^5.6.0",
+    "next-seo": "^6.1.0",
+    "react-icons": "^4.11.0",
+    "react-hot-toast": "^2.4.1",
+    "react-window": "^8.10.0",
+    "shimmer": "^1.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/three": "^r128",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "prettier": "^3.0.0",
+    "eslint": "^8.49.0",
+    "eslint-config-next": "^14.0.0"
+  }
+}
