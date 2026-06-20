@@ -1,0 +1,140 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cyber-darker text-white font-sans;
+  font-feature-settings: 'rlig' 1 'calt' 1;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cyber-darker;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neon-blue rounded-full hover:bg-neon-purple;
+  background: linear-gradient(180deg, #00d9ff, #d946ef);
+}
+
+/* Selection styling */
+::selection {
+  @apply bg-neon-blue text-cyber-darker;
+}
+
+/* Placeholder styling */
+::placeholder {
+  @apply text-gray-500;
+}
+
+/* Code block styling */
+code {
+  @apply font-mono text-sm;
+}
+
+pre {
+  @apply bg-cyber-card border border-cyber-border rounded-lg p-4 overflow-x-auto;
+}
+
+/* Link styling */
+a {
+  @apply text-neon-blue hover:text-neon-cyan transition-colors;
+}
+
+/* Button reset */
+button {
+  @apply transition-all duration-300 ease-out;
+}
+
+/* Input styling */
+input,
+textarea,
+select {
+  @apply bg-cyber-card border border-cyber-border rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-neon-blue focus:border-transparent;
+}
+
+/* Animation utilities */
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(
+    to right,
+    rgba(31, 41, 55, 0) 0%,
+    rgba(31, 41, 55, 0.1) 20%,
+    rgba(31, 41, 55, 0.1) 40%,
+    rgba(31, 41, 55, 0) 100%
+  );
+  background-size: 1000px 100%;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply backdrop-blur-md bg-white/5 border border-white/10;
+}
+
+.glass-dark {
+  @apply backdrop-blur-xl bg-black/20 border border-white/5;
+}
+
+/* Neon effects */
+.neon-border {
+  @apply border-2 border-neon-blue shadow-neon;
+}
+
+.neon-text {
+  @apply text-neon-blue drop-shadow-[0_0_10px_rgba(0,217,255,0.5)];
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+/* Responsive grid */
+.grid-responsive {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    padding-bottom: 80px;
+  }
+}
