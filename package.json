@@ -1,43 +1,79 @@
 {
   "name": "x7-cyber-academy",
   "version": "1.0.0",
-  "description": "Premium Cybersecurity Education Platform - Ethical Hacking Sandbox",
+  "description": "Master Ethical Hacking Through Interactive Sandboxes & CTF Challenges",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
-    "format": "prettier --write \"src/**/*.{ts,tsx,json,css}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,json,md}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,json,md}\"",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
-    "next": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "framer-motion": "^10.16.0",
-    "three": "^r128",
-    "tailwindcss": "^3.3.0",
+    "next": "^14.0.0",
+    "framer-motion": "^10.16.4",
+    "zustand": "^4.4.1",
     "clsx": "^2.0.0",
-    "zustand": "^4.4.0",
-    "idb": "^7.1.0",
-    "next-pwa": "^5.6.0",
-    "next-seo": "^6.1.0",
-    "react-icons": "^4.11.0",
-    "react-hot-toast": "^2.4.1",
-    "react-window": "^8.10.0",
-    "shimmer": "^1.0.2"
+    "@tabler/icons-react": "^2.44.0",
+    "react-icons": "^4.12.0",
+    "next-pwa": "^5.6.0"
   },
   "devDependencies": {
-    "typescript": "^5.2.0",
-    "@types/node": "^20.0.0",
+    "@types/node": "^20.8.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
-    "@types/three": "^r128",
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.0",
-    "prettier": "^3.0.0",
-    "eslint": "^8.49.0",
-    "eslint-config-next": "^14.0.0"
-  }
+    "typescript": "^5.2.2",
+    "tailwindcss": "^3.3.5",
+    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^14.0.0",
+    "prettier": "^3.0.3",
+    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/forms": "^0.5.6"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [
+    "cybersecurity",
+    "ethical-hacking",
+    "ctf",
+    "penetration-testing",
+    "learning",
+    "education",
+    "labs",
+    "interactive",
+    "sandbox"
+  ],
+  "author": "X7 Cyber Academy Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KENDALERRORSYSTEM/CYBER-TEST.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KENDALERRORSYSTEM/CYBER-TEST/issues"
+  },
+  "homepage": "https://github.com/KENDALERRORSYSTEM/CYBER-TEST#readme"
 }
