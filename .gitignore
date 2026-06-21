@@ -1,15 +1,19 @@
-# Dependencies
+# Git Configuration
+# Ignore dependencies
 node_modules/
 .pnp
 .pnp.js
 
 # Testing
 coverage/
+.nyc_output/
 
 # Production
 build/
 .next/
 out/
+.vercel/
+.netlify/
 
 # Misc
 .DS_Store
@@ -18,20 +22,32 @@ out/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+.env
+.env.local
+.env.*.local
+.env.production.local
 
-# Debug
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.sublime-project
+.sublime-workspace
+*.code-workspace
 
-# Environment variables
-.env
-.env.local
-.env.*.local
+# OS
+Thumbs.db
+.DS_Store
 
-# PWA
-public/sw.js
-public/workbox-*.js
-public/workbox-*.js.map
+# Build outputs
+dist/
+build/
+.cache/
+
+# Dependencies
+lock files (if using different package managers)
+pnpm-lock.yaml
+yarn.lock
